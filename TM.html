@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Management</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 10px 13px 16px black;
+            border-radius: 8px;
+            margin-left: 220px; 
+        }
+
+        .sidebar {
+            width: 200px; 
+            background-color: navy; 
+            padding-top: 20px; 
+            position: fixed; 
+            height: 100%; 
+        }
+
+        .sidebar a {
+            display: block; 
+            color: white; 
+            padding: 15px; 
+            text-decoration: none; 
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: grey;
+            color: yellow; 
+        }
+
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 150px;
+            }
+            .container {
+                margin-left: 160px;
+                width: calc(100% - 160px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .sidebar {
+                width: 100%; 
+                height: auto; 
+                position: relative; 
+            }
+            .container {
+                margin-left: 0; 
+                width: 100%; 
+            }
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: right;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="Home.html">Home</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About us</a>
+    </div>
+
+    <div class="container">
+
+        <h2>Course Description</h2>
+        <p>The Technology Management course provides insights into managing technological innovation and infrastructure within organizations. Key topics include technology strategy, project management, and the impact of technology on business processes. Students will explore methods to effectively leverage technology for competitive advantage and organizational success.</p>
+
+        <h2>Course Instructors</h2>
+        <ul>
+            <li>Dr. Usman Ali</li>
+            <li>Prof. Ayesha Tariq</li>
+            <li>Ms. Farhan Ahmed</li>
+        <h2>Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Room</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>08:30 AM - 10:00 AM</td>
+                <td>Room B-204</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>08:30 AM - 10:00 AM</td>
+                <td>Room B-204</td>
+            </tr>
+        </table>
+
+        <footer>
+            <strong>Contact Us: </strong> 1234 5678912
+        </footer>
+    </div>
+
+</body>
+</html>

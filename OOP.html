@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 10px 13px 16px black;
+            border-radius: 8px;
+            margin-left: 220px; 
+        }
+
+        .sidebar {
+            width: 200px; 
+            background-color: navy; 
+            padding-top: 20px; 
+            position: fixed; 
+            height: 100%;  
+        }
+
+        .sidebar a {
+            display: block; 
+            color: white; 
+            padding: 15px; 
+            text-decoration: none; 
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: grey;
+            color: yellow; 
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 150px;
+            }
+            .container {
+                margin-left: 160px;
+                width: calc(100% - 160px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                width: 100%; 
+                height: auto; 
+                position: relative; 
+            }
+            .container {
+                margin-left: 0; 
+                width: 100%; 
+            }
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: right;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="Home.html">Home</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About us</a>
+    </div>
+
+    <div class="container">
+
+        <h2>Course Description</h2>
+        <p>The Object-Oriented Programming (OOP) course provides an in-depth introduction to the concepts of object-oriented design and programming. Students will learn how to design, develop, and analyze software using object-oriented techniques. Topics include classes, objects, inheritance, polymorphism, encapsulation, and abstraction. The course will also cover advanced topics such as exception handling, file I/O, and design patterns.</p>
+
+        <h2>Course Instructors</h2>
+        <ul>
+            <li>Dr. Ahmed Ali Khan</li>
+            <li>Prof. Sara Fatima</li>
+            <li>Ms. Zainab Hussain</li>
+        </ul>
+
+        <h2>Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>    
+                <th>Time</th>
+                <th>Room</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 11:30 AM</td>
+                <td>Room C-305</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>10:00 AM - 11:30 AM</td>
+                <td>Room C-305</td>
+            </tr>
+        </table>
+
+        <footer>
+            <strong>Contact Us: </strong> 1234 5678912
+        </footer>
+    </div>
+
+</body>
+</html>

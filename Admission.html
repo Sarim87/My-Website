@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 10px 13px 16px black;
+            border-radius: 8px;
+            margin-left: 220px; 
+        }
+
+        .sidebar {
+            width: 200px; 
+            background-color: navy; 
+            padding-top: 20px; 
+            position: fixed; 
+            height: 100%; 
+        }
+
+        .sidebar a {
+            display: block; 
+            color: white; 
+            padding: 15px; 
+            text-decoration: none; 
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: grey;
+            color: yellow; 
+        }
+
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 150px;
+            }
+            .container {
+                margin-left: 160px;
+                width: calc(100% - 160px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .sidebar {
+                width: 100%; 
+                height: auto; 
+                position: relative; 
+            }
+            .container {
+                margin-left: 0; 
+                width: 100%; 
+            }
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: right;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: navy;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: 0.3s;
+            border: none;
+            border-radius: 50px;
+        }
+
+        input[type="submit"]:hover {
+            background-color:  lightblue;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="Home.html">Home</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About us</a>
+    </div>
+
+    <div class="container">
+
+        <h2>Fill out the following form for admission:</h2>
+
+        <form action="#" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    Female
+                </label>
+            </div>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+
+            <label for="education">Matric / Fsc or O-level / A-level</label>
+            <div class="radio-group">
+                <label for="O/A-level">
+                    <input type="radio" id="O/A-level" name="education" value="O/A-level">
+                    O/A Level
+                </label>
+                <label for="matric/fsc">
+                    <input type="radio" id="matric/fsc" name="education" value="matric/fsc">
+                    Matric/Fsc 
+                </label>
+
+            </div>
+
+            <label for="degree">Department of Interest:</label>
+            <select id="degree" name="degree" required>
+                <option value="computer-science">Computer Science</option>
+                <option value="cyber-security">Cyber Security</option>
+                <option value="artificial-Intelligence">Artificial Intelligence</option>
+                <option value="software-engineering">Software Engineering</option>
+                <option value="management">Management</option>
+            </select>
+
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <footer>
+            <strong>Contact Us: </strong> 1234 5678912
+        </footer>
+    </div>
+
+</body>
+</html>

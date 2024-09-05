@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 10px 13px 16px black;
+            border-radius: 8px;
+            margin-left: 220px; 
+        }   
+
+        .sidebar {
+            width: 200px; 
+            background-color: navy; 
+            padding-top: 20px; 
+            position: fixed; 
+            height: 100%; 
+        }
+
+        .sidebar a {
+            display: block; 
+            color: white; 
+            padding: 15px; 
+            text-decoration: none; 
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: grey;
+            color: yellow; 
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 150px;
+            }
+            .container {
+                margin-left: 160px;
+                width: calc(100% - 160px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                width: 100%; 
+                height: auto; 
+                position: relative; 
+            }
+            .container {
+                margin-left: 0; 
+                width: 100%; 
+            }
+        }
+
+        .container ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="Home.html">Home</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About us</a>
+    </div>
+
+    <div class="container">
+
+        <h1>FAST University</h1>
+        
+        <h2>Departments and their Courses</h2>
+
+        <ul>
+            <li>Computer Science</li>
+            <ol>
+                <a href="PF.html"><li>Programming Fundamentals</li></a>
+                <a href="OOP.html"><li>Object Oriented Programmimg</li></a>
+            </ol>
+            <li>Cyber Security</li>
+            <ol>
+                <a href="NCY.html"><li>Network and Cyber Security</li></a>
+                <a href="Crypto.html"><li>Cryptography</li></a>
+            </ol>
+            <li>Artificial Intelligence</li>
+            <ol>
+                <a href="AI.html"><li>Introduction to AI</li></a>
+                <a href="ML.html"><li>Machine Learning</li></a>
+            </ol>
+            <li>Software Engineering</li>
+            <ol>
+                <a href="SE.html"><li>Introduction to SE</li></a>
+                <a href="SR.html"><li>Software Requirements</li></a>
+            </ol>
+            <li>Management</li>
+            <ol>
+                <a href="FOM.html"><li>Fundamentals of Management</li></a>
+                <a href="TM.html"><li>Technology Management</li></a>
+            </ol>
+        </ul>
+
+        <footer>
+            <strong>Contact Us: </strong> 1234 5678912
+        </footer>
+
+    </div>
+
+</body>
+</html>
+

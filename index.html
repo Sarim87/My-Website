@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 10px 13px 16px black;
+            border-radius: 8px;
+            margin-left: 220px; 
+        }
+
+        .fast-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 100px;
+        }
+
+        .sidebar {
+            width: 200px; 
+            background-color: navy; 
+            padding-top: 20px; 
+            position: fixed; 
+            height: 100%;   
+        }
+
+        .sidebar a {
+            display: block; 
+            color: white; 
+            padding: 15px; 
+            text-decoration: none; 
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: grey;
+            color: yellow; 
+        }
+
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 150px;
+            }
+            .container {
+                margin-left: 160px;
+                width: calc(100% - 160px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .sidebar {
+                width: 100%; 
+                height: auto; 
+                position: relative; 
+            }
+            .container {
+                margin-left: 0; 
+                width: 100%; 
+            }
+        }
+        footer{
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="Home.html">Home</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About us</a>
+    </div>
+
+    <div class="container">
+
+        <img src="FAST.png" alt="FAST Logo" class="fast-logo">
+
+        <br><br>
+        <h1>FAST University</h1>
+        <h2>About</h2>
+        <p>FAST University, officially the National University of Computer and Emerging Sciences (NUCES), is one of Pakistan's leading institutions for higher education in computer science, engineering, and business. Established in 2000, FAST University has campuses in Islamabad, Lahore, Karachi, Peshawar, and Faisalabad. Known for its high academic standards, innovative research, and strong industry connections, FAST University is dedicated to developing skilled professionals who excel in their fields globally.</p>
+        
+        <footer>
+            <strong>Contact Us: </strong> 1234 5678912
+        </footer>
+    </div>
+
+</body>
+</html>
+
